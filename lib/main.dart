@@ -24,14 +24,14 @@ Future<void> main() async {
 
   // Initialize Supabase
   await Supabase.initialize(
-    url: 'https://jdsyleczpxtabdvbiwbt.supabase.co',
+    url: '',
     anonKey:
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Impkc3lsZWN6cHh0YWJkdmJpd2J0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgyMTk4MzIsImV4cCI6MjA3Mzc5NTgzMn0.qQIYXXx_NbWgTppelaOcTmg3EBe7KJbISpo6rTRdj7A',
+        '',
   );
 
   // Securely store Hugging Face token
   const storage = FlutterSecureStorage();
-  const hfToken = "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";
+  const hfToken = "your hftoken here";
   final existingToken = await storage.read(key: "hf_token");
   if (existingToken == null) {
     await storage.write(key: "hf_token", value: hfToken);
