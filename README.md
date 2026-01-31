@@ -88,7 +88,7 @@ flutter run
 
 Make sure an emulator, simulator, or physical device is connected.
 
-Optional: Host your AI model on a cloud platform (Hugging Face, etc.) and update the API URL in the app.
+Host your AI model on a cloud platform (Hugging Face, etc.) and update the API URL in the app.
 
 📦 Project Structure
 lib/
